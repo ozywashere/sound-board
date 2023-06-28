@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #777;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  border-radius: 5px;
+  padding: 14px 28px;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.btn:active,
+.btn:focus {
+  transform: scale(0.9);
+  box-shadow: inset 3px 3px 2px 3px rgba(0, 0, 0, 0.1),
+    inset -3px -3px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
